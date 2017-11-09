@@ -10,7 +10,7 @@ var Estado = (function() {
 		console.log('Iniciando o estado...');
 		console.log('this no prototype', this);
 		$.ajax({
-			url: 'http://localhost:8888/estados',
+			url: 'http://localhost:8080/estados',
 			method: 'GET',
 			dataType: 'jsonp',
 			success: onEstadosRetornados.bind(this),
